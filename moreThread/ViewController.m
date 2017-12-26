@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"按钮" forState:UIControlStateNormal];
+//    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
 }
 
 
